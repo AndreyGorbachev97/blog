@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.face-image {
+  height: 100vh; /* Высота блока */
+  background:linear-gradient( rgba(0, 0, 0, 0.6),
+  rgba(0, 0, 0, 0.6) ), url(components/Body/img/drink.jpg) 100% 100% no-repeat; /* Добавляем фон */
+  background-size: cover; /* Масштабируем фон */
+}
+
+.list-cards {
+  height: 100vh;
+  background-color: #e8eaf6;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
