@@ -1,6 +1,8 @@
 import {combineReducers} from 'redux';
-import drinks from './drinks'
+import drinksReducers from './drinks';
+import activeState from './activeState';
 
 export default combineReducers({
-    drinks
+    drinks: drinksReducers,
+    active: activeState,
 })

@@ -6,24 +6,38 @@ import FaceBlock from './components/Body/FaceBlock';
 import ListCards from './components/Body/ListCards';
 import BaseTextHeader from './components/Body/BaseTextHeader';
 import scrollToComponent from 'react-scroll-to-component';
-import {connect} from 'react-redux';
-
-
+import {scrollToCards} from './actions';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux'; 
 import './App.css';
 
 class App extends Component {
 
+
+  componentDidUpdate() {
+    this.scroll(this.props.scroll)
+  }
+  scroll = (scroll) => {
+    switch(scroll) {
+      case 1:
+        scrollToComponent(this.Violet, { offset: 0, align: 'top', duration: 1500});
+        break;
+    }
+  }
   render() {
+    
     return (
       <div /*className="App"*/>
         <FaceBlock />
-        <ListCards />           
+        <ListCards />     
+        <section className='violet' ref={(section) => { this.Violet = section; }}>Violet</section>      
       </div>
     );
   }
 }
 
 export default connect(
-  state => ({}),
-  dispatch => ({})
+  state => ({
+    scroll: state.active.scroll
+  }),
 )(App);
