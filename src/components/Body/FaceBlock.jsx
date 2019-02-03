@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import drinkImg from './img/drink.jpg';
 import BaseTextHeader from './BaseTextHeader';
 
 
