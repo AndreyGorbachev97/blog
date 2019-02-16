@@ -1,15 +1,15 @@
 .App {
-  text-align: center;
+  background-color: #ede7f6
 }
 
 .header {
   position: absolute;
-  background-color: rgba(4, 51, 114, 0.623);
+  background-color: rgba(24, 17, 66, 0.705);
 }
 .face-image {
   height: 100vh; /* Высота блока */
   background:linear-gradient( rgba(0, 0, 0, 0.6),
-  rgba(0, 0, 0, 0.6) ), url(components/Body/img/drink.jpg) 100% 100% no-repeat fixed; /* Добавляем фон */
+  rgba(0, 0, 0, 0.6) ), url(components/Body/img/bar.jpg) 100% 100% no-repeat fixed; /* Добавляем фон */
   background-size: cover; /* Масштабируем фон */
 }
 
@@ -19,7 +19,7 @@
 }
 
 .Base-text {
-  font-family: 'Lobster', cursive;
+  font-family: 'Amatic SC', cursive;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -29,14 +29,17 @@
 }
 
 .Base-button {
-  height: 3em;
+  margin-top: 2em;
+  height: 3.5em;
+  width: 8em;
   background-color: #ffffff00;
   border-color: none;
-  border: 2px solid white;
+  border: 0.15em solid rgb(253, 226, 208);
   border-radius: 15px;
-  font-size: 1em;
+  font-size: 1.1em;
   color: white;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 
   outline: none;
 
@@ -44,13 +47,13 @@
 }
 
 .Base-button:hover {
-  background: rgba(3, 26, 75, 0.308);
+  background: rgba(75, 14, 3, 0.25);
   border-color: #ffffffc9;
   transform: scale(1.05);
 }
 
 .Base-button:active {
-  background: rgba(3, 26, 75, 0.308);
+  background: rgba(75, 14, 3, 0.25);
   border-color: #ffffffc9;
   transform: scale(1);
 }

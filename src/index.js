@@ -12,7 +12,8 @@ import devToolsEnhancer from 'remote-redux-devtools';
 
 WebFont.load({
     google: {
-        families: ['Lobster', 'cursive']
+        families: ['Pacifico', 'cursive','Amatic SC',
+        'Montserrat', 'sans-serif']
     }
 });
 
