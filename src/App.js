@@ -7,6 +7,7 @@ import scrollToComponent from 'react-scroll-to-component';
 import { scrollToCards } from './actions';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import QueueAnim from 'rc-queue-anim';
 import './App.css';
 
 class App extends Component {
@@ -23,12 +24,16 @@ class App extends Component {
     }
   }
   render() {
-
     return (
       <div className="App">
   
         <FaceBlock />
         <ListCards ref={(section) => { this.cards = section; }} />
+        <QueueAnim delay={6}>
+          <div key="1" >enter in queue</div>
+          <div key="2">enter in queue</div>
+          <div key="3">enter in queue</div>
+        </QueueAnim>
       </div>
     );
   }

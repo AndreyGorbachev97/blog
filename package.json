@@ -5,6 +5,11 @@
   "dependencies": {
     "@material-ui/core": "^3.9.1",
     "@material-ui/icons": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.20",
+    "nodemon": "^1.18.10",
+    "rc-queue-anim": "^1.6.12",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-lazy-hero": "^2.0.0",
@@ -20,7 +25,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "nodemon backend/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
