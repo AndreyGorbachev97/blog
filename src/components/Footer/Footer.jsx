@@ -18,11 +18,7 @@ function BottomAppBar(props) {
   const { classes } = props;
   return (
     <Fragment>
-      <AppBar position="fixed" color="primary" className={classes.appBar}>
-        <Toolbar className={classes.toolbar}>
-             tyy
-        </Toolbar>
-      </AppBar>
+      <div style={{backgroundColor: '#fb8c00', height: '4em'}}>sdsd</div>
     </Fragment>
   );
 }

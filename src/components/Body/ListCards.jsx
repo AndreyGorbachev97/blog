@@ -47,7 +47,7 @@ class ListCards extends React.Component {
                 name: 'red wine',
                 color_wine: 'red',
                 price: '1000',
-                text: 'good wine1'
+                text: 'good wine1 good wine1 good wine1 good wine1 good wine1 good wine1 good wine1 good wine1 мgood wine1 good wine1 good wine1 good wine1'
             },
         ]
         console.log(this.props.drinks)

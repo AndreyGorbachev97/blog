@@ -1,10 +1,15 @@
 .App {
-  background-color: #ede7f6
+  background-color: #fff3e0
 }
 
 .header {
   position: absolute;
   background-color: rgba(24, 17, 66, 0.705);
+}
+.footer {
+  height: 80px;
+  margin-top: -80px;
+  background-color: '#fb8c00'
 }
 .face-image {
   height: 100vh; /* Высота блока */
@@ -18,8 +23,9 @@
   background-color: #e8eaf6;
 }
 
+
 .Base-text {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -39,7 +45,11 @@
   font-size: 1.1em;
   color: white;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  
+
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
 
   outline: none;
 
@@ -47,13 +57,11 @@
 }
 
 .Base-button:hover {
-  background: rgba(75, 14, 3, 0.25);
   border-color: #ffffffc9;
   transform: scale(1.05);
 }
 
 .Base-button:active {
-  background: rgba(75, 14, 3, 0.25);
   border-color: #ffffffc9;
   transform: scale(1);
 }
