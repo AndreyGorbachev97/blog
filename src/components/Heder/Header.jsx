@@ -13,7 +13,7 @@ function ButtonAppBar(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="absolute" style={{backgroundColor: '#fb8c00'}}>
+      <AppBar position="static" style={{backgroundColor: '#fb8c00'}}>
         <Toolbar >
             <div>blog</div>
         </Toolbar>

@@ -1,7 +1,17 @@
 .App {
-  background-color: #fff3e0
+  background-color: #fafafa
 }
 
+.title_text {
+  font-family: 'Roboto Slab', sans-serif;
+  color: #424242;
+  margin-bottom: 5%;
+  font-size: 1.5em
+}
+.base_text {
+  font-family: 'Merriweather', serif;
+  color: #757575
+}
 .header {
   position: absolute;
   background-color: rgba(24, 17, 66, 0.705);
@@ -11,6 +21,18 @@
   margin-top: -80px;
   background-color: '#fb8c00'
 }
+
+.Card {
+  padding: 5px;
+  transition-property: margin-left;
+  transition-duration: 0.4s;
+}
+
+.Card:hover {
+  margin-left: 10px;
+  background-color:#eeeeee
+}
+
 .face-image {
   height: 100vh; /* Высота блока */
   background:linear-gradient( rgba(0, 0, 0, 0.6),
@@ -25,13 +47,13 @@
 
 
 .Base-text {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
+  color: rgb(243, 243, 243);
 }
 
 .Base-button {
@@ -45,7 +67,7 @@
   font-size: 1.1em;
   color: white;
   text-decoration: none;
-  
+  font-family: 'Rubik', sans-serif;
 
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;

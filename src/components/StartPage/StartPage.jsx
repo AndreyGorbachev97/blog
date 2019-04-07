@@ -18,16 +18,15 @@ class StartPage extends Component {
     switch (scroll) {
       case 1:
         scrollToComponent(this.cards, { offset: 0, align: 'top', duration: 1500 });
+        this.props.scrollToCards({scroll: 0})
         break;
     }
   }
   render() {
     return (
       <div>
-  
         <FaceBlock />
-        <ListCards ref={(section) => { this.cards = section; }} />
-        
+        <ListCards ref={(section) => { this.cards = section; }} /> 
       </div>
     );
   }

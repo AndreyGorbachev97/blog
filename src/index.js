@@ -7,7 +7,6 @@ import WebFont from 'webfontloader';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './reducers';
-import devToolsEnhancer from 'remote-redux-devtools';
 import Routes from './components/routes/Routes';
 import Header from './components/Heder/Header';
 import Footer from './components/Footer/Footer';
@@ -15,7 +14,8 @@ import Footer from './components/Footer/Footer';
 WebFont.load({
     google: {
         families: ['Pacifico', 'cursive','Amatic SC', 'Comfortaa',
-        'Montserrat', 'sans-serif', 'Yanone Kaffeesatz']
+        'Montserrat', 'sans-serif', 'serif', 'Yanone Kaffeesatz', 'Roboto Slab:700', 'Merriweather:700', 'Cuprum',
+        'Rubik:500']
     }
 });
 
