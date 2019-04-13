@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Header from '../Heder/Header';
-import Footer from '../Footer/Footer';
-import FaceBlock from '../Body/FaceBlock';
-import ListCards from '../Body/ListCards';
+import FaceBlock from './FaceBlock';
+import ListCards from './ListCards';
 import scrollToComponent from 'react-scroll-to-component';
 import { scrollToCards } from '../../actions';
 import { bindActionCreators } from 'redux';

@@ -1,10 +1,14 @@
 import React, { Fragment } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import MiniCard from './MiniCard';
+
 
 class Card extends React.Component {
 
+    
     render() {
+        
         return (
             <div style={{width: '100%', margin: '5% 0% 5% 0'}}>
                  <Grid container>
@@ -27,83 +31,11 @@ class Card extends React.Component {
                     <Grid item xs={12} xl={12} sm={12} md={12} lg={4}>
                         <div style={{minHeight:'600px', margin: '10px'}}>
                             <div className= 'title_text'>Еще статьи</div>
-                         
-                            <Grid container className ='Card' >
-                                <Grid item xs={6} sm={5} >
-                                    <img                    
-                                        style={{objectFit: 'cover', borderRadius: '10px' ,border: '3px #ffcc80 solid'}}
-                                        height='100'
-                                        width='90%'
-                                        src='/Wine.jpg'
-                                    />
-                                </Grid>
-                                <Grid item xs={6} sm={7}>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                </Grid>
-                            </Grid> 
-
-                            <Grid container className ='Card' >
-                                <Grid item xs={6} sm={5} >
-                                    <img                    
-                                        style={{objectFit: 'cover', borderRadius: '10px' ,border: '3px #ffcc80 solid'}}
-                                        height='100'
-                                        width='90%'
-                                        src='/Wine.jpg'
-                                    />
-                                </Grid>
-                                <Grid item xs={6} sm={7}>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                </Grid>
-                            </Grid> 
-                            <Grid container className ='Card' >
-                                <Grid item xs={6} sm={5} >
-                                    <img                    
-                                        style={{objectFit: 'cover', borderRadius: '10px' ,border: '3px #ffcc80 solid'}}
-                                        height='100'
-                                        width='90%'
-                                        src='/Wine.jpg'
-                                    />
-                                </Grid>
-                                <Grid item xs={6} sm={7}>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                </Grid>
-                            </Grid> 
-                            <Grid container className ='Card' >
-                                <Grid item xs={6} sm={5} >
-                                    <img                    
-                                        style={{objectFit: 'cover', borderRadius: '10px' ,border: '3px #ffcc80 solid'}}
-                                        height='100'
-                                        width='90%'
-                                        src='/Wine.jpg'
-                                    />
-                                </Grid>
-                                <Grid item xs={6} sm={7}>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                </Grid>
-                            </Grid> 
-                            <Grid container className ='Card' >
-                                <Grid item xs={6} sm={5} >
-                                    <img                    
-                                        style={{objectFit: 'cover', borderRadius: '10px' ,border: '3px #ffcc80 solid'}}
-                                        height='100'
-                                        width='90%'
-                                        src='/Wine.jpg'
-                                    />
-                                </Grid>
-                                <Grid item xs={6} sm={7}>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                    <span className= 'base_text'>Lorem ipsum dolor sit.</span>
-                                </Grid>
-                            </Grid> 
+                            <MiniCard/>
+                            <MiniCard/>
+                            <MiniCard/>
+                            <MiniCard/>
+                            <MiniCard/>
                                          
                         </div>
                     </Grid>

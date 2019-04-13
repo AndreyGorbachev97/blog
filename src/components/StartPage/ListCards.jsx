@@ -72,7 +72,6 @@ class ListCards extends React.Component {
                                             <CardMedia
                                                 style={{objectFit: 'cover'}}
                                                 component="img"
-                                                //className={classes.media}
                                                 height='150'
                                                 image='/Wine.jpg'
                                                 title="Contemplative Reptile"
