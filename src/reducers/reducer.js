@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux';
-import drinksReducers from './drinks';
+import drinksReducers from './drinksState';
 import activeState from './activeState';
 
 export default combineReducers({

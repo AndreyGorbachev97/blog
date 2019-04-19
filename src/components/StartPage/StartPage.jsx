@@ -5,10 +5,13 @@ import scrollToComponent from 'react-scroll-to-component';
 import { scrollToCards } from '../../actions';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import {requestPosts} from '../../actions/index'
 
 class StartPage extends Component {
 
-
+  componentWillMount = () => {
+    this.props.requestPosts()
+  }
   componentDidUpdate() {
     this.scroll(this.props.scroll)
   }
@@ -34,5 +37,8 @@ export default connect(
   state => ({
     scroll: state.active.scroll
   }),
-  dispatch => bindActionCreators({ scrollToCards: scrollToCards }, dispatch)
+  dispatch => bindActionCreators({ 
+    scrollToCards: scrollToCards,
+    requestPosts: requestPosts
+   }, dispatch)
 )(StartPage);

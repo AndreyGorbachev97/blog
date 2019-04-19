@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 
 class BaseTextHeader extends React.Component {
 
+    
     render() {
         return (
             <Fragment>
@@ -25,5 +26,8 @@ class BaseTextHeader extends React.Component {
 
 export default connect(
     state => ({...state}),
-    dispatch => bindActionCreators({scrollToCards: scrollToCards}, dispatch)
+    dispatch => bindActionCreators(
+        {
+            scrollToCards: scrollToCards,
+        }, dispatch)
 )(BaseTextHeader)
