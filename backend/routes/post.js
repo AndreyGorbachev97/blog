@@ -7,11 +7,18 @@ router.get('/', async (req, res) => {
     res.status(200).json(posts)
 })
 
+router.get('/:id', async (req, res) => {
+    const post = await  Post.find({_id: req.params.id})
+    res.status(200).json(post[0])
+})
+
 router.post('/', async (req, res) => {
     console.log(req.body)
     const postData = {
         title: req.body.title,
+        mini_text:req.body.mini_text,
         text: req.body.text,
+        image: req.body.image,
     }
 
     const post = new Post(postData)
@@ -23,7 +30,9 @@ router.post('/:id', async (req, res) => {
     console.log(req.body)
     const postData = {
         title: req.body.title,
+        mini_text:req.body.mini_text,
         text: req.body.text,
+        image: req.body.image,
     }
     
     await Post.update({_id: req.params.id}, postData, {upsert: true})

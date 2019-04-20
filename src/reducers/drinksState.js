@@ -3,8 +3,13 @@ export default (state={}, action) => {
         case 'STORE_SHOW_POSTS_DRINK':
             return {
                 ...state,
-                drinks: action.payload
+                list: action.payload
             }
+        case 'STORE_SHOW_POST':
+        return {
+            ...state,
+            post: action.payload
+        }
         default:
             return state;
     }

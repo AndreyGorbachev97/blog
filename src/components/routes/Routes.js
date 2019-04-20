@@ -10,7 +10,10 @@ class Routes extends Component {
             <HashRouter>
                 <Switch>
                     <Route exact path="/" component={StartPage} />
-                    <Route path="/card" component={Card} />
+                    <Route 
+                        path="/card/:id"
+                        component={Card}
+                    />
                 </Switch>
             </HashRouter>
         );

@@ -8,6 +8,14 @@
   margin-bottom: 5%;
   font-size: 1.5em
 }
+
+.mini_title_text {
+  font-family: 'Roboto Slab', sans-serif;
+  color: #424242;
+  margin-bottom: 5%;
+  font-size: 1.2em
+}
+
 .base_text {
   font-family: 'Merriweather', serif;
   color: #757575
