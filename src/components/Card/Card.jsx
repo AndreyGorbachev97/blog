@@ -5,13 +5,24 @@ import MiniCard from './MiniCard';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import {requestOnePost, requestPosts} from '../../actions/index';
+import Header from '../Heder/Header';
+import Footer from '../Footer/Footer';
+
 
 
 class Card extends React.Component {
 
-    componentWillMount = () => { 
+    componentWillMount = () => {        
         this.props.requestPosts()
         this.props.requestOnePost(this.props.match.params.id)
+        
+    }
+   
+    componentDidMount = () => {
+        window.scrollTo(0,0);
+    }
+    componentWillUpdate = () => {
+        window.scrollTo(0,0);
     }
 
     render() {
@@ -19,16 +30,16 @@ class Card extends React.Component {
         const post = drinks.post || {};
         const posts = drinks.list || [];
         return (
-            <div style={{width: '100%', margin: '5% 0% 5% 0'}}>
+            <Fragment>
+                <Header className = 'Header' id = 'Header' />
+                <div style={{width: '100%', margin: '5% 0% 5% 0'}}>
                  <Grid container>
                     <Grid item xs={1} xl={1} sm={1}/>
                     <Grid item xs={12} xl={12} sm={12}  md={12} lg={7}>
                             <Paper style={{ margin: '10px'}} elevation={3}>
                                 <img                    
                                     style={{objectFit: 'cover', maxHeight: '700px'}}
-                                    width= '100%'
-
-                                    
+                                    width= '100%'                                  
                                     src={`/img${post.image}.jpg`} 
                                 />
                                 <div style={{margin: '2% 2% 0% 4%', padding: '0% 0% 5% 0%'}}>
@@ -53,8 +64,11 @@ class Card extends React.Component {
                         </div>
                     </Grid>
                  </Grid>
-               
+                
             </div>
+            <Footer/>
+            </Fragment>
+            
         )
     }
 }

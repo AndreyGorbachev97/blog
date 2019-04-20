@@ -30,9 +30,7 @@ sagaMiddleware.run(mySaga)
 ReactDOM.render(
     <Provider store={store}>
         <App>
-            <Header/>
             <Routes/>
-            <Footer/>
         </App>
     </Provider>,
     document.getElementById('root')

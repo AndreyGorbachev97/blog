@@ -5,7 +5,9 @@ import scrollToComponent from 'react-scroll-to-component';
 import { scrollToCards } from '../../actions';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import {requestPosts} from '../../actions/index'
+import {requestPosts} from '../../actions/index';
+import Header from '../Heder/Header';
+import Footer from '../Footer/Footer';
 
 class StartPage extends Component {
 
@@ -26,8 +28,10 @@ class StartPage extends Component {
   render() {
     return (
       <div>
+        <Header/>
         <FaceBlock />
-        <ListCards ref={(section) => { this.cards = section; }} /> 
+        <ListCards ref={(section) => { this.cards = section; }} />
+        <Footer/> 
       </div>
     );
   }
