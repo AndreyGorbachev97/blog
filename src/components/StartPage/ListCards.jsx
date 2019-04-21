@@ -10,14 +10,17 @@ import {Link} from 'react-router-dom';
 
 class ListCards extends React.Component {
 
+    state = { 
+        count_cards: 8
+    }
     render() {
         const drinks = this.props.drinks.list || [];
-
+        const {count_cards} = this.state;
         return (
             <Fragment>
-                <div style={{ padding: '6%' }}>
+                <div style={{ padding: '4%' }}>
                     <Grid container spacing={24}>
-                        {drinks.map(drink => {
+                        {drinks.sort((a,b) => b.text.length - a.text.length).slice(0,count_cards).map(drink => {
                             return (
                                 <Grid item xs={12} sm={3} key={drink._id}>
                                     <Card 
@@ -48,8 +51,16 @@ class ListCards extends React.Component {
                                 </Grid>
                             );
                         })}
-
-                    </Grid>
+                        {drinks.length > count_cards && 
+                            <Grid item xs={12} sm={12} style={{display: 'flex', justifyContent: 'center'}}>
+                                <button 
+                                    className = 'button'
+                                    onClick = {() => {this.setState({count_cards: count_cards + 8 })}}
+                                >
+                                    Показать еще
+                                </button>
+                            </Grid>}    
+                    </Grid>                   
                 </div>
             </Fragment>
         )

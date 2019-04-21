@@ -8,8 +8,6 @@ import {requestOnePost, requestPosts} from '../../actions/index';
 import Header from '../Heder/Header';
 import Footer from '../Footer/Footer';
 
-
-
 class Card extends React.Component {
 
     componentWillMount = () => {        
@@ -22,7 +20,7 @@ class Card extends React.Component {
         window.scrollTo(0,0);
     }
     componentWillUpdate = () => {
-        window.scrollTo(0,0);
+        window.scrollTo(0,0);       
     }
 
     render() {
@@ -45,14 +43,13 @@ class Card extends React.Component {
                                 <div style={{margin: '2% 2% 0% 4%', padding: '0% 0% 5% 0%'}}>
                                     <div className= 'title_text'>{post.title}</div>
                                     <div className= 'base_text'>{post.text}</div>
-                                </div>
-                                
+                                </div>                               
                             </Paper>
                     </Grid>
                     <Grid item xs={12} xl={12} sm={12} md={12} lg={4}>
                         <div style={{minHeight:'600px', margin: '10px'}}>
                             <div className= 'title_text'>Еще статьи</div>
-                            {posts.map(drink => {
+                            {posts.sort((a,b) => b.text.length - a.text.length).filter(_ => post._id !== _._id).slice(0,5).map(drink => {
                                 return (
                                     <MiniCard
                                         key = {drink._id}

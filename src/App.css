@@ -64,6 +64,26 @@
   color: rgb(243, 243, 243);
 }
 
+.button {
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  border-color: none;
+  border: none;
+  background-color:#4e4e4e00;
+  font-size: 1.1em;
+  color: #757575;
+  outline: none;
+  border-radius: 10px;
+  padding: 4px;
+  border-bottom: 0.12em solid rgba(173, 169, 166, 0);
+  transition-property: border-color;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  border-color: #ffcc3e;
+}
+
+
 .Base-button {
   margin-top: 2em;
   height: 3.5em;
