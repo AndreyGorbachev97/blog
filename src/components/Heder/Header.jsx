@@ -26,7 +26,9 @@ function ButtonAppBar(props) {
               color="inherit"
               component={Link}
               to='/'
-            >на главную</Button>
+            >
+              на главную
+            </Button>
         </Toolbar>
         
       </AppBar>
