@@ -8,7 +8,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mongoose": "^5.4.20",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.18.10",
     "rc-queue-anim": "^1.6.12",
     "react": "^16.7.0",
